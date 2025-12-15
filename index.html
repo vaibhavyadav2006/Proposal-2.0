@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPOSAL...😍</title>
+    <style>
+        div{
+            text-align: center ;
+            background-color: rgb(34, 213, 127);
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 100px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 50px;
+            border-radius: 10px;
+            border: 2px solid black;
+            
+        }
+        button{
+            border-radius: 4px;
+
+        }
+        .p1{
+            background-color: rgb(238, 238, 96);
+            border: 2px solid rgb(142, 153, 16);
+            padding: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 8px;
+        }
+        #para2{
+            background-color: rgb(22, 137, 219);
+            border: 2px solid rgb(75, 5, 128);
+            margin-left: 250px;
+            margin-right: 250px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #para3{
+            background-color: rgb(243, 38, 103);
+            border: 2px solid rgb(46, 41, 47);
+            margin-left: 250px;
+            margin-right: 250px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        body{
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <p>A message from Vaibhav yadav.</p>
+    <button id="btn1">CLICK HERE 😊</button>
+    <p id="para1"></p>
+    <p class="p1">DO YOU?</p>
+    <p id="para2">YES</p>
+    <p id="para3">NO</p>
+    <p id = "para4"></p>
+    </div>
+    <script>
+        
+
+        // document.getElementById("btn1").addEventListener("click",function(){
+        //     let res = confirm("VAIBHAV: I love you Anshika!!!!!!!!!");
+        //     if (res){
+        //         console.log('ANSHIKA: Yes, I love you too!!!!!!!!');
+        //         document.writeln("ANSHIKA:  Yes, I love you too!!!!!!!!")
+        //     } else{
+        //         console.log('i definetly love you!!!!!!!!!');
+        //         document.writeln("ANSHIKA:  I love you soo much my dear Vaibhav")
+        //     }
+        // })
+
+        
+
+        let btn = document.getElementById("btn1");
+        function greet(){
+            let myRes = document.getElementById("para1");
+            myRes.innerText = "VAIBHAV:  I love you Anshika❤️!!!";
+        }
+        btn.addEventListener("click",greet);
+
+        document.getElementById('para2').addEventListener("mouseover",function(){
+            let response = document.getElementById("para4");
+            response.innerText = "ANSHIKA: I love you too💕!!!";
+        })
+
+        document.getElementById("para3").addEventListener("mouseover", function(){
+            let response = document.getElementById("para4");
+            response.innerText = "ANSHIKA: I love you soo much dear Vaibhav💕😘❤️(tumhari naa me bhi haa hain...)"
+        })
+
+
+        
+
+
+        // let btn = document.getElementsByTagName("button");
+        // function clkbtn(){
+        //     alert("button clicked!!!")
+        // }
+        // btn.addEventListner("click",clkbtn);
+    </script>
+</body>
+</html>
